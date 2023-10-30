@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    margin: 0 ;
+}
+h1{
+    margin-top: 8vh;
+    font-size: 60px;
+}
+h2{
+    color: crimson;
+    font-size: 40px;
+}
+.item{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: solid 5px rgb(255, 246, 246);  
+}
+
+#img{
+    display: flex;
+    justify-content: center;
+}
+
+.Tabela{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: solid 5px rgb(255, 246, 246);
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+}
+
+footer{
+    color: blue;
+}
+
+#barra_lateral{
+    grid-area: bar_lateral;
+    display: flex;
+    flex-direction: column;
+    margin: 3vh 10vw 0 15vw;
+    padding: 0 2vw 0 2vw;
+    background-color: rgb(24, 34, 34);
+    border-radius: 10px;
+}
+
+#Inicio{
+    grid-area: inicio;
+}
+
+header{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 'inicio inicio inicio bar_lateral';
+    justify-content: center;
+    margin-left: 7vw;
+
+}
+
+header p{
+    font-size: 20px;
+    margin-top: 5vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+
+}
+nav p , #musica p{
+    font-size: 25px;
+    font-weight: 600;
+}
+#musica{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+audio{
+    width: 80%;
+    height: 50px;
+    margin-top: 40px;
+}
+
+main {
+    margin-right: 45vw;
+    margin-left: 7vw;
+}
+
+p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+ul{
+    font-size: 20px;
+}
+
+a{
+    font-size: 25px;
+    color: white;
+}
+
+table, tr, th,td{
+    border: solid 2px white;
+    font-size: 25px;
+    border-collapse: collapse;
+    background-color: rgb(75, 72, 72);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media only screen and (max-width:992px){
+    main, header{
+        margin-right: 10vw;
+    }
+    #barra_lateral{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:600px){
+    tabel,tr, th, td{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    h1{
+        font-size:60px;
+    }
+
+}
